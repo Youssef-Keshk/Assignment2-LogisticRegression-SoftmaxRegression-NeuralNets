@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, random_split, TensorDataset
 import os, time, csv
-from typing import List, Type, Optional
+from typing import List, Type
 
 class CustomNeuralNet(nn.Module):
     def __init__(self, sizes: List[int], activation: Type[nn.Module] = nn.Tanh, weight_init: str = "xavier"):
